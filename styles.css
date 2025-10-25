@@ -10,7 +10,7 @@ text-align: center;
     display:flex; flex-wrap:wrap; 
 } /* condensed to save space */
 .project {
-width: 100%;
+width: 50%;
 margin: 10px;
 padding: 20px 10px;
 background: white; /* pick a color */
