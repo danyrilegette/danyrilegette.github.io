@@ -1,0 +1,249 @@
+/* EVERYTHING WAS MADE MY CHATGPT */
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Danyri Legette — Resume</title>
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f62fe;
+      --border:#e6e9ef;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#0b1220;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+    }
+    .container{
+      width:100%;
+      max-width:900px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(8,15,30,0.06);
+      border:1px solid var(--border);
+      padding:28px;
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:24px;
+    }
+
+    /* Header */
+    .name {
+      margin:0;
+      font-size:28px;
+      letter-spacing:-0.2px;
+    }
+    .title {
+      margin:6px 0 18px 0;
+      color:var(--muted);
+      font-weight:600;
+    }
+
+    /* Left content */
+    .section {
+      margin-bottom:18px;
+    }
+    h3.section-title{
+      margin:0 0 10px 0;
+      font-size:14px;
+      text-transform:uppercase;
+      color:var(--accent);
+      letter-spacing:1px;
+    }
+    p, li {
+      line-height:1.5;
+      color:#111827;
+      margin:6px 0;
+    }
+    ul.skills {
+      list-style:none;
+      padding:0;
+      margin:8px 0 0 0;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    ul.skills li{
+      background:#eef2ff;
+      color:#0b2a66;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      border:1px solid rgba(15,98,254,0.06);
+    }
+
+    /* Experience list */
+    .job {
+      margin-bottom:12px;
+    }
+    .job .meta{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .job .company{
+      font-weight:700;
+    }
+    .job .dates{
+      color:var(--muted);
+      font-size:13px;
+    }
+    .job .bullets{
+      margin:8px 0 0 0;
+      padding-left:18px;
+    }
+
+    /* Right column (contact + education) */
+    .side {
+      background:linear-gradient(180deg, rgba(15,98,254,0.03), transparent);
+      padding:18px;
+      border-radius:10px;
+      height:fit-content;
+      border:1px solid rgba(15,98,254,0.04);
+    }
+    .contact-item{
+      font-size:14px;
+      margin-bottom:8px;
+      color:#0b1220;
+    }
+    .muted { color:var(--muted); font-size:13px; }
+    .edu {
+      margin-top:12px;
+    }
+
+    /* Footer / small */
+    .small {
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* Responsive */
+    @media (max-width:800px){
+      .card{
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="card" role="main" aria-label="Resume — Danyri Legette">
+      <section>
+        <header>
+          <h1 class="name">Danyri Legette</h1>
+          <div class="title">Sales & Customer Service • Cash Handling • Inventory</div>
+        </header>
+
+        <section class="section" aria-labelledby="summary-heading">
+          <h3 id="summary-heading" class="section-title">Summary</h3>
+          <p>
+            Energetic retail and food service professional with hands-on experience in salesfloor operations,
+            customer service, POS/cash handling, and inventory management. Reliable team player who
+            follows safety procedures and keeps products organized and customer-ready.
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="skills-heading">
+          <h3 id="skills-heading" class="section-title">Skills</h3>
+          <ul class="skills" role="list">
+            <li>Customer Service</li>
+            <li>Sales</li>
+            <li>Cash Handling & POS Systems</li>
+            <li>Team Collaboration</li>
+            <li>Inventory Management</li>
+            <li>Time Management</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="experience-heading">
+          <h3 id="experience-heading" class="section-title">Experience</h3>
+
+          <div class="job" aria-label="Walmart — Salesfloor Team Associate">
+            <div class="meta">
+              <div>
+                <div class="company">Walmart — Salesfloor Team Associate</div>
+                <div class="muted">Myrtle Beach, SC</div>
+              </div>
+              <div class="dates">June 2025 — Present</div>
+            </div>
+            <ul class="bullets">
+              <li>Monitored freshness, rotated stock, and removed expired or damaged items to ensure food safety standards.</li>
+              <li>Operated pallet jacks and other store equipment safely and effectively.</li>
+              <li>Organized inventory in backroom and sales floor areas, ensuring products were easy to locate and properly labeled.</li>
+            </ul>
+          </div>
+
+          <div class="job" aria-label="Kate Spade — Sales Associate">
+            <div class="meta">
+              <div>
+                <div class="company">Kate Spade — Sales Associate (Seasonal)</div>
+                <div class="muted">Myrtle Beach, SC</div>
+              </div>
+              <div class="dates">November 2024 — Current (Seasonal)</div>
+            </div>
+            <ul class="bullets">
+              <li>Assisted customers in product selection by providing knowledgeable recommendations on styles, materials, and collections.</li>
+              <li>Assisted with inventory management, including receiving shipments, restocking shelves, and conducting cycle counts.</li>
+              <li>Maintained detailed product knowledge, including new arrivals, promotions, and brand history.</li>
+            </ul>
+          </div>
+
+          <div class="job" aria-label="Jimmy John's — Team Member">
+            <div class="meta">
+              <div>
+                <div class="company">Jimmy John's — Team Member</div>
+                <div class="muted">Myrtle Beach, SC</div>
+              </div>
+              <div class="dates">June 2023 — November 2023</div>
+            </div>
+            <ul class="bullets">
+              <li>Operated POS system to process cash and card transactions efficiently and accurately.</li>
+              <li>Prepared made-to-order sandwiches quickly and accurately while maintaining quality and presentation standards.</li>
+              <li>Restocked ingredients and supplies throughout shifts to support smooth operations during peak hours.</li>
+            </ul>
+          </div>
+
+        </section>
+      </section>
+
+      <aside class="side" aria-labelledby="contact-heading">
+        <h3 id="contact-heading" class="section-title">Contact</h3>
+        <div class="contact-item"><strong>Address:</strong><br>378 Glacier Way<br>Conway, SC 29526</div>
+        <div class="contact-item"><strong>Phone:</strong><br><a href="tel:8434240996">843-424-0996</a></div>
+        <div class="contact-item"><strong>Email:</strong><br><a href="mailto:nlegette0575@gmail.com">nlegette0575@gmail.com</a></div>
+
+        <section class="edu" aria-labelledby="education-heading">
+          <h3 id="education-heading" class="section-title">Education</h3>
+          <div>
+            <div class="company">University of South Carolina — Bachelor of Science, Computer Engineering</div>
+            <div class="muted">Columbia, SC — August 2025 — May 2029</div>
+            <p class="small">GPA: Not applicable</p>
+          </div>
+        </section>
+
+        <div style="height:12px"></div>
+        <div class="small">Available for retail / customer service roles and seasonal work. References available on request.</div>
+      </aside>
+    </main>
+
+    <p style="margin-top:12px; color:var(--muted); font-size:13px;">
+      Tip: save this file as <code>index.html</code> and upload to a GitHub repo. To use GitHub Pages, enable Pages in the repo settings and set the branch to serve.
+    </p>
+  </div>
+</body>
+</html>
